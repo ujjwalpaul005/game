@@ -1,0 +1,36 @@
+*{
+    background-color: rgb(39, 39, 50);
+    color: rgb(217, 219, 219);
+    margin: 0px;
+    padding: 0px;
+}
+#nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 50px;
+    border-bottom: 1px solid ;
+}
+
+a{
+    text-decoration: none;
+}
+
+#home{
+    text-align: right;
+    font-size: 25px;
+}
+
+#home:hover{
+    text-shadow: 0 0 5px #00eeff, 0 0 10px #00eeff,
+             0 0 20px #00eeff, 0 0 30px #00eeff,
+             0 0 40px #00eeff;
+}
+
+#nav > select{
+    padding: 5px;
+    font-size: 1.05em;
+}
