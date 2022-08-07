@@ -14,6 +14,26 @@
 }
 .card{
     cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card > img{
+  width: 300px;
+  border-radius: 10px;
+}
+
+.card > p{
+  font-size: 20px;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  line-height: 30px
+  /* background-color: transparent; */
 }
 .gradient-border{
   position: relative;
