@@ -15,7 +15,16 @@
     background-color: aliceblue;
     width: 60%;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+#area img{
+    width: 70px;
+    height: 80px;
+}
+
 #you{
     width: 15%;
 }
@@ -47,3 +56,4 @@
 #buttons img:hover{
     transform: scale(1.1);
 }
+
