@@ -4,6 +4,13 @@
 }
 
 #footer{
+    width: 100%;
+    position:fixed;
+    bottom: 5%;
+}
+
+#footer > p{
+    font-family: Verdana, sans-serif;
     text-align: center;
-    bottom: 0;
+    letter-spacing: 0.1rem;
 }

@@ -3,9 +3,9 @@ let navbar = () =>{
     <a href="/index.html" id="home"><span>Game Zone</span></a>
         
     <select id="gamelist">
-        <option value="#">Select Game</option>
-        <option value="#">One</option>
-        <option value="#">Two</option>
+        <option value="#">Info</option>
+        <option value="#">About Me</option>
+        <option value="#">Donate A Coffee</option>
     </select>
     `
 }

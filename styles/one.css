@@ -12,7 +12,7 @@
 }
 #area{
     height: 200px;
-    background-color: aliceblue;
+    border:1px dotted aliceblue;
     width: 60%;
     border-radius: 10px;
     display: flex;

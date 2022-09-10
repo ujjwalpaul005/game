@@ -1,6 +1,6 @@
 let footer = () => {
     return`
-    <div id="footer"> < Created with coded <span style="color:red;">❤</span> by Ujjwal /></div>
+    <p> < Created with <span style="color:red;">❤</span> code by Ujjwal /></p>
     `
 }
 
