@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#footer{
+    text-align: center;
+    bottom: 0;
+}

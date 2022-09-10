@@ -7,6 +7,39 @@ let you;
 let your_score = 0;
 let comp_score = 0;
 
+let hideIt = () => {
+  
+  let flag = 0;
+
+  let buttonHide = setInterval(() => {
+    if (flag >= 1) {
+      clearInterval(buttonHide);
+    }
+    document.getElementById("buttons").innerHTML = null;
+    flag++;
+  }, 10);
+
+  setTimeout(() => {
+    document.getElementById("buttons").innerHTML = `
+    <img
+        src="https://www.seekpng.com/png/detail/816-8161371_rock-paper-scissor-icon-png.png"
+        id="stone"
+      />
+
+      <img
+        src="https://www.pngitem.com/pimgs/m/266-2667252_transparent-rock-paper-scissors-clipart-rock-paper-scissors.png"
+        id="paper"
+      />
+
+      <img src="https://image.pngaaa.com/787/3313787-middle.png" id="scissor" />
+    `;
+
+    document.getElementById("stone").addEventListener("click", stone);
+    document.getElementById("paper").addEventListener("click", paper);
+    document.getElementById("scissor").addEventListener("click", scissor);
+  }, 2000);
+};
+
 let inText = (id, text) => {
   document.getElementById(id).innerText = text;
 };
@@ -29,7 +62,7 @@ let pic = (opt) => {
 let showIt = (you, comp) => {
   let youPic = pic(you);
   let compPic = pic(comp);
-  
+
   document.getElementById("area").innerHTML = `
         <img
             src=${compPic}
@@ -40,12 +73,12 @@ let showIt = (you, comp) => {
     `;
 
   setTimeout(() => {
-      document.body.
     document.getElementById("area").innerHTML = null;
-  }, 2000);
+  }, 1500);
 };
 
 let game = (you) => {
+  hideIt();
   let comp = Math.floor(Math.random() * 3);
 
   if (you == "stone") {
@@ -78,12 +111,12 @@ let game = (you) => {
   //   console.log(comp_score, your_score);
   showIt(you, comp);
 
-  if (comp_score == 5) {
+  if (comp_score == 3) {
     setTimeout(() => {
       window.alert("Oops! Computer won. Try Again.");
       window.location.reload();
     }, 500);
-  } else if (your_score == 5) {
+  } else if (your_score == 3) {
     setTimeout(() => {
       window.alert("Yaay! You won the match. Let's play again.");
       window.location.reload();
