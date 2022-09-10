@@ -1,5 +1,5 @@
-import navbar from "../components/navbar.js";
-import footer from "../components/footer.js";
+import navbar from "../game/components/navbar.js";
+import footer from "../game/components/footer.js";
 
 
 document.getElementById("nav").innerHTML = navbar();
