@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Zone</title>
-    <link rel="shortcut icon" href="https://img.icons8.com/doodle/344/controller--v1.png" type="image/x-icon">
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="stylesheet" href="./styles/navbar.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-</head>
-<body>
-    <div id="nav">
-    </div>
+    <link
+      rel="shortcut icon"
+      href="https://img.icons8.com/doodle/344/controller--v1.png"
+      type="image/x-icon"
+    />
+
+    
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <div id="nav"></div>
 
     <div id="page">
-        <div class="card gradient-border"  onclick="one()">
-            <img src="https://www.kindpng.com/picc/m/212-2122689_rock-paper-scissors-random-rock-paper-scissors-png.png">
-            <p>Stone Paper Scissor</p>
-        </div>
+      <div class="card gradient-border" onclick="one()">
+        <img
+          src="https://www.kindpng.com/picc/m/212-2122689_rock-paper-scissors-random-rock-paper-scissors-png.png"
+        />
+        <p>Stone Paper Scissor</p>
+      </div>
     </div>
 
-    <div id="footer">
-    </div>
-</body>
+    <div id="footer"></div>
+  </body>
 </html>
 <script src="./script/index.js" type="module"></script>
 <script>
-    function one(){
-        window.location.href = "./game/one.html";
-    }
+  document.getElementById("home").addEventListener("click", () => {
+    window.location.href = "../game/index.html";
+  });
 </script>
