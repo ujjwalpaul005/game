@@ -5,3 +5,4 @@ import footer from "../components/footer.js";
 document.getElementById("nav").innerHTML = navbar();
 document.getElementById("footer").innerHTML = footer();
 
+document.getElementById("home").href = "index.html";
