@@ -1,6 +1,6 @@
 let navbar = () =>{
     return `
-    <a href="../index.html" id="home"><span>Game Zone</span></a>
+    <a href="../../index.html" id="home"><span>Game Zone</span></a>
         
     <select id="gamelist">
         <option value="#">Info</option>
